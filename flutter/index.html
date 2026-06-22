@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issam Otoz — Senior Flutter Engineer</title>
+<meta name="description" content="Issam Otoz — Senior Flutter Engineer. 6+ years building production Flutter apps on iOS, Android & web. Bloc, Clean Architecture, animations, ICPC finalist.">
+<style>
+  :root{
+    --blue:#0468D7; --blue-d:#034a9b; --ink:#0C1730; --ink-2:#13203B;
+    --muted:#5A6573; --line:#E1E7F0; --bg:#F7F9FC; --card:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Helvetica Neue",Arial,system-ui,sans-serif;color:var(--ink);
+    background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  section{padding:46px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:1.6px;color:var(--blue);
+    font-weight:700;margin-bottom:22px}
+
+  /* hero */
+  .hero{background:linear-gradient(135deg,#0C1730 0%,#13203B 55%,#034a9b 130%);
+    color:#fff;padding:64px 0 56px}
+  .hero .wrap{position:relative}
+  .hero h1{font-size:clamp(34px,6vw,52px);font-weight:800;letter-spacing:.4px;line-height:1.05}
+  .hero .role{font-size:clamp(16px,2.6vw,21px);color:#7FB2F2;font-weight:600;margin-top:10px}
+  .hero p.lead{margin-top:18px;max-width:660px;color:#C7D3E6;font-size:16px}
+  .badges{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px}
+  .badge{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+    color:#E8EEF8;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:30px}
+  .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:8px;transition:.15s}
+  .btn:hover{background:#1f7ce6;text-decoration:none;transform:translateY(-1px)}
+  .btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35)}
+  .btn.ghost:hover{background:rgba(255,255,255,.08)}
+  .contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:7px 18px;font-size:13.5px;color:#C7D3E6}
+  .contact a{color:#9FC3F2}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 12px}
+  .stat .n{font-size:28px;font-weight:800;color:var(--blue);line-height:1}
+  .stat .l{font-size:12.5px;color:var(--muted);margin-top:7px}
+
+  /* about */
+  p.body{font-size:16px;color:#2A3342;max-width:760px}
+  p.body b{color:var(--ink-2)}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .sk{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+  .sk h3{font-size:13px;color:var(--ink-2);margin-bottom:7px;font-weight:700}
+  .sk .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:12px;color:#33506f;background:#EAF2FD;border:1px solid #D4E4F9;
+    padding:3px 9px;border-radius:6px;font-weight:600}
+
+  /* experience */
+  .job{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;margin-bottom:14px;border-left:3px solid var(--blue)}
+  .job-h{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;align-items:baseline}
+  .job-r{font-size:16px;font-weight:700;color:var(--ink-2)}
+  .job-c{color:var(--blue);font-weight:700}
+  .job-m{font-size:12.5px;color:var(--muted);font-weight:600;white-space:nowrap}
+  .job ul{margin:9px 0 0 0;padding-left:0;list-style:none}
+  .job li{position:relative;padding-left:16px;font-size:14px;color:#3A4452;margin-bottom:5px}
+  .job li::before{content:"▸";color:var(--blue);position:absolute;left:0;font-size:11px;top:1px}
+  .job .stk{margin-top:9px;font-size:12px;color:var(--muted)}
+
+  /* footer */
+  footer{background:#0C1730;color:#C7D3E6;text-align:center;padding:42px 0;border:0}
+  footer h2{color:#7FB2F2}
+  footer .links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;font-size:15px}
+  footer a{color:#9FC3F2}
+  .copy{margin-top:24px;font-size:12.5px;color:#5A6981}
+
+  @media(max-width:640px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .skills{grid-template-columns:1fr}
+    section{padding:38px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Issam Otoz</h1>
+    <div class="role">Senior Flutter Engineer · Flutter &amp; Dart · iOS · Android · Web</div>
+    <p class="lead">6+ years building, shipping, and scaling production Flutter apps from a single codebase —
+      cross-platform on iOS, Android, and web. Strong on clean architecture, pixel-perfect UI, animations,
+      and performance. 8+ years in mobile overall. ICPC finalist.</p>
+    <div class="badges">
+      <span class="badge">Flutter</span><span class="badge">Dart</span><span class="badge">Bloc / Riverpod</span>
+      <span class="badge">Clean Architecture</span><span class="badge">DevTools</span>
+      <span class="badge">CI/CD</span><span class="badge">Remote-first</span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="Issam Otoz - Flutter Engineer.pdf">Download CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/issamotoz">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/issam-otoz-38876a193">LinkedIn</a>
+      <a class="btn ghost" href="https://issamotoz.github.io">iOS Portfolio</a>
+    </div>
+    <div class="contact">
+      <span>📍 Remote · Dubai, UAE</span>
+      <span>✉ <a href="mailto:issamotoz@gmail.com">issamotoz@gmail.com</a></span>
+      <span>📱 <a href="tel:+971529601998">+971 52 960 1998</a></span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n">6+</div><div class="l">Years building Flutter</div></div>
+      <div class="stat"><div class="n">99.5%</div><div class="l">Crash-free sessions</div></div>
+      <div class="stat"><div class="n">4000+</div><div class="l">Problems solved (ICPC)</div></div>
+      <div class="stat"><div class="n">15+</div><div class="l">Production apps shipped</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="body">
+      I'm a Flutter engineer who ships cross-platform apps end-to-end — one codebase running on
+      <b>iOS, Android, and web</b>. I architect with <b>Clean Architecture and the right state management</b>
+      (<b>Bloc, Provider, Riverpod</b>), build <b>pixel-perfect, responsive UI</b> with custom widgets and smooth
+      animations, and profile with <b>Flutter DevTools</b> to keep rendering, startup, and memory tight. I integrate
+      <b>REST APIs, GraphQL, and Firebase</b>, own <b>CI/CD</b> (GitHub Actions, Bitrise, Fastlane) for App Store and
+      Play Store releases, and lead <b>code reviews and mentoring</b>. I came to Flutter from native iOS (Swift), so I
+      reach for platform channels and native code when it counts. ICPC / ACPC finalist with 4000+ problems solved.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="sk"><h3>Flutter &amp; Dart</h3><div class="tags">
+        <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Widget Framework</span>
+        <span class="tag">Custom Widgets</span><span class="tag">Isolates</span><span class="tag">Null Safety</span></div></div>
+      <div class="sk"><h3>State &amp; Architecture</h3><div class="tags">
+        <span class="tag">Bloc / Cubit</span><span class="tag">Provider</span><span class="tag">Riverpod</span>
+        <span class="tag">Clean Architecture</span><span class="tag">MVVM</span><span class="tag">SOLID</span></div></div>
+      <div class="sk"><h3>UI &amp; Animations</h3><div class="tags">
+        <span class="tag">Pixel-Perfect</span><span class="tag">Responsive / Adaptive</span><span class="tag">Material</span>
+        <span class="tag">Cupertino</span><span class="tag">Custom Animations</span><span class="tag">60/120 FPS</span></div></div>
+      <div class="sk"><h3>Performance</h3><div class="tags">
+        <span class="tag">Flutter DevTools</span><span class="tag">Rebuild Profiling</span><span class="tag">Memory</span>
+        <span class="tag">Startup Time</span><span class="tag">Jank Elimination</span></div></div>
+      <div class="sk"><h3>Integration</h3><div class="tags">
+        <span class="tag">REST (Dio)</span><span class="tag">GraphQL</span><span class="tag">Firebase</span>
+        <span class="tag">Push (FCM)</span><span class="tag">Platform Channels</span><span class="tag">Third-Party SDKs</span></div></div>
+      <div class="sk"><h3>Quality &amp; CI/CD</h3><div class="tags">
+        <span class="tag">Unit / Widget / Integration</span><span class="tag">TDD</span><span class="tag">GitHub Actions</span>
+        <span class="tag">Bitrise</span><span class="tag">Fastlane</span><span class="tag">Play / App Store</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Selected Projects</h2>
+    <div class="skills">
+      <div class="sk"><h3>Kaso — B2B Procurement (YC W22)</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Cross-platform Flutter apps digitalising restaurant ordering, used daily by thousands of merchants and suppliers across the GCC. Led the full iOS → Flutter migration. 99.5% crash-free.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Bloc</span><span class="tag">Clean Architecture</span><span class="tag">CI/CD</span></div></div>
+      <div class="sk"><h3>Fintech &amp; e-commerce (KAIZEN)</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Led a 5+ engineer team building Flutter + native apps for 50,000+ users — secure payments, KYC, biometric auth. CI/CD cut deploys ~40% and bugs ~70%.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">MVVM</span><span class="tag">Payments</span></div></div>
+      <div class="sk"><h3>15+ shipped Flutter apps</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">e-commerce, delivery, real estate, and services (Pazzar, Elanco, Aradeh, Takhaweni and more) across iOS &amp; Android — 100K+ combined downloads.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">REST</span><span class="tag">Play / App Store</span></div></div>
+      <div class="sk"><h3>Native roots — iOS &amp; Apple Watch</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Music Network One — native iOS plus a companion watchOS app. The native background that makes my platform-channel and performance work sharper.</p>
+        <div class="tags"><span class="tag">Swift</span><span class="tag">watchOS</span><span class="tag">Platform Channels</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Senior Flutter Engineer · <span class="job-c">Kaso (YC W22)</span></div>
+        <div class="job-m">Sep 2022 – Present · Dubai</div>
+      </div>
+      <ul>
+        <li>Lead cross-platform Flutter development (iOS &amp; Android); led the full iOS → Flutter migration to modular Clean Architecture + Bloc.</li>
+        <li>Built a reusable widget library with custom components and animations; profiled with DevTools for 99.5% crash-free sessions.</li>
+        <li>Integrate REST (Dio) and Firebase; own CI/CD with GitHub Actions; mentor engineers and run code reviews.</li>
+      </ul>
+      <div class="stk">Flutter · Dart · Bloc · Clean Architecture · DevTools · Firebase · GitHub Actions</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Senior Mobile Engineer / Team Lead (Flutter &amp; iOS) · <span class="job-c">KAIZEN</span></div>
+        <div class="job-m">Jul 2020 – Aug 2022</div>
+      </div>
+      <ul>
+        <li>Architected Flutter fintech apps with Clean Architecture and MVVM; mentored a 5+ engineer team.</li>
+        <li>Built payments, KYC, and secure auth flows; established CI/CD (~40% faster deploys, ~70% fewer bugs).</li>
+      </ul>
+      <div class="stk">Flutter · iOS (Swift) · MVVM · Payments · CI/CD</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Senior Flutter &amp; iOS Engineer (Contract, Remote) · <span class="job-c">IXCoders</span></div>
+        <div class="job-m">Jan 2021 – Jun 2022</div>
+      </div>
+      <ul>
+        <li>Built, released, and maintained 10+ production Flutter apps for e-commerce, delivery, and real estate (100,000+ downloads).</li>
+        <li>Integrated third-party libraries and APIs with caching and offline support; CI/CD (Fastlane) for daily releases.</li>
+      </ul>
+      <div class="stk">Flutter · Dart · Bloc · REST · Fastlane</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Mobile Application Developer (Flutter · iOS · Android) · <span class="job-c">AutoTech Co</span></div>
+        <div class="job-m">Feb 2018 – Jun 2020</div>
+      </div>
+      <ul>
+        <li>Built native and cross-platform apps serving 20,000+ users; pioneered Flutter adoption, cutting multi-platform dev time ~50%.</li>
+      </ul>
+      <div class="stk">Flutter · iOS (Swift) · Android (Kotlin)</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Competitive Programming</h2>
+    <p class="body"><b>ICPC / ACPC Finalist</b> — 4000+ problems solved across Codeforces, HackerRank, AtCoder,
+      and LeetCode. <b>2nd Place</b> ICPC Syrian Championship (2024) · <b>5th Place</b> ICPC Damascus (2023).
+      Strong algorithms and optimization — the foundation for smooth animations and performant Flutter code.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <div class="links">
+      <a href="mailto:issamotoz@gmail.com">issamotoz@gmail.com</a>
+      <a href="https://www.linkedin.com/in/issam-otoz-38876a193">LinkedIn</a>
+      <a href="https://github.com/issamotoz">GitHub</a>
+      <a href="https://issamotoz.github.io">iOS Portfolio</a>
+      <a href="https://www.hackerrank.com/profile/issamotoz">HackerRank</a>
+    </div>
+    <div class="copy">© 2026 Issam Otoz · Senior Flutter Engineer · Remote · Dubai, UAE</div>
+  </div>
+</footer>
+
+</body>
+</html>
