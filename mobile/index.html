@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issam Otoz — Mobile Engineer &amp; Team Lead</title>
+<meta name="description" content="Issam Otoz — Senior Mobile Engineer & Team Lead. 8+ years across iOS (Swift) and Flutter/Android, leading teams and shipping to the App Store & Google Play. ICPC finalist.">
+<style>
+  :root{
+    --blue:#0468D7; --blue-d:#034a9b; --ink:#0C1730; --ink-2:#13203B;
+    --muted:#5A6573; --line:#E1E7F0; --bg:#F7F9FC; --card:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Helvetica Neue",Arial,system-ui,sans-serif;color:var(--ink);
+    background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  section{padding:46px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:1.6px;color:var(--blue);
+    font-weight:700;margin-bottom:22px}
+
+  .hero{background:linear-gradient(135deg,#0C1730 0%,#13203B 55%,#034a9b 130%);
+    color:#fff;padding:64px 0 56px}
+  .hero .wrap{position:relative}
+  .hero h1{font-size:clamp(34px,6vw,52px);font-weight:800;letter-spacing:.4px;line-height:1.05}
+  .hero .role{font-size:clamp(16px,2.6vw,21px);color:#7FB2F2;font-weight:600;margin-top:10px}
+  .hero p.lead{margin-top:18px;max-width:680px;color:#C7D3E6;font-size:16px}
+  .badges{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px}
+  .badge{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+    color:#E8EEF8;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:30px}
+  .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:8px;transition:.15s}
+  .btn:hover{background:#1f7ce6;text-decoration:none;transform:translateY(-1px)}
+  .btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35)}
+  .btn.ghost:hover{background:rgba(255,255,255,.08)}
+  .contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:7px 18px;font-size:13.5px;color:#C7D3E6}
+  .contact a{color:#9FC3F2}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 12px}
+  .stat .n{font-size:28px;font-weight:800;color:var(--blue);line-height:1}
+  .stat .l{font-size:12.5px;color:var(--muted);margin-top:7px}
+
+  p.body{font-size:16px;color:#2A3342;max-width:760px}
+  p.body b{color:var(--ink-2)}
+
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .sk{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+  .sk h3{font-size:13px;color:var(--ink-2);margin-bottom:7px;font-weight:700}
+  .sk .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:12px;color:#33506f;background:#EAF2FD;border:1px solid #D4E4F9;
+    padding:3px 9px;border-radius:6px;font-weight:600}
+
+  .job{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;margin-bottom:14px;border-left:3px solid var(--blue)}
+  .job-h{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;align-items:baseline}
+  .job-r{font-size:16px;font-weight:700;color:var(--ink-2)}
+  .job-c{color:var(--blue);font-weight:700}
+  .job-m{font-size:12.5px;color:var(--muted);font-weight:600;white-space:nowrap}
+  .job ul{margin:9px 0 0 0;padding-left:0;list-style:none}
+  .job li{position:relative;padding-left:16px;font-size:14px;color:#3A4452;margin-bottom:5px}
+  .job li::before{content:"▸";color:var(--blue);position:absolute;left:0;font-size:11px;top:1px}
+  .job .stk{margin-top:9px;font-size:12px;color:var(--muted)}
+
+  footer{background:#0C1730;color:#C7D3E6;text-align:center;padding:42px 0;border:0}
+  footer h2{color:#7FB2F2}
+  footer .links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;font-size:15px}
+  footer a{color:#9FC3F2}
+  .copy{margin-top:24px;font-size:12.5px;color:#5A6981}
+
+  @media(max-width:640px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .skills{grid-template-columns:1fr}
+    section{padding:38px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Issam Otoz</h1>
+    <div class="role">Senior Mobile Engineer &amp; Team Lead · iOS · Android · Flutter</div>
+    <p class="lead">8+ years building and shipping mobile apps across iOS (Swift) and Flutter/Android, with
+      3+ years leading teams. I own delivery end-to-end — architecture, App Store &amp; Play Store releases,
+      performance, and mentoring. Fintech and high-scale product background. ICPC finalist.</p>
+    <div class="badges">
+      <span class="badge">iOS / Swift</span><span class="badge">Flutter</span><span class="badge">Android</span>
+      <span class="badge">Team Lead</span><span class="badge">Clean Architecture</span>
+      <span class="badge">App Store &amp; Play Store</span><span class="badge">Remote-first</span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="Issam Otoz - Mobile Engineer.pdf">Download CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/issamotoz">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/issam-otoz-38876a193">LinkedIn</a>
+      <a class="btn ghost" href="https://issamotoz.github.io">iOS</a>
+      <a class="btn ghost" href="https://issamotoz.github.io/flutter">Flutter</a>
+    </div>
+    <div class="contact">
+      <span>📍 Remote · Dubai, UAE</span>
+      <span>✉ <a href="mailto:issamotoz@gmail.com">issamotoz@gmail.com</a></span>
+      <span>📱 <a href="tel:+971529601998">+971 52 960 1998</a></span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n">8+</div><div class="l">Years in mobile</div></div>
+      <div class="stat"><div class="n">5+</div><div class="l">Engineers led</div></div>
+      <div class="stat"><div class="n">4000+</div><div class="l">Problems solved (ICPC)</div></div>
+      <div class="stat"><div class="n">15+</div><div class="l">Production apps shipped</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="body">
+      I'm a mobile engineer and team lead who ships across <b>iOS (Swift, UIKit, SwiftUI)</b> and
+      <b>Flutter / Android</b>. I've <b>led a 5+ engineer team</b> — breaking down work, running code reviews,
+      removing blockers, and owning <b>App Store and Google Play releases</b> end-to-end. I architect with
+      <b>Clean Architecture and MVVM</b>, care about performance (99.5% crash-free), secure coding, and testing, and
+      I work closely with Product, Design, Backend, QA, and DevOps. Much of my work is in <b>fintech and high-scale
+      commerce</b>. I use <b>AI dev tools (Claude Code, Cursor) daily</b> to lift speed and quality. ICPC / ACPC finalist
+      with 4000+ problems solved.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What I Do</h2>
+    <div class="skills">
+      <div class="sk"><h3>Leadership &amp; Delivery</h3><div class="tags">
+        <span class="tag">Team Lead</span><span class="tag">Mentoring</span><span class="tag">Sprint Planning</span>
+        <span class="tag">Estimation</span><span class="tag">Code Reviews</span><span class="tag">Agile / Scrum</span></div></div>
+      <div class="sk"><h3>iOS</h3><div class="tags">
+        <span class="tag">Swift</span><span class="tag">UIKit</span><span class="tag">SwiftUI</span>
+        <span class="tag">CoreData</span><span class="tag">Instruments</span><span class="tag">App Store Connect</span></div></div>
+      <div class="sk"><h3>Android &amp; Cross-Platform</h3><div class="tags">
+        <span class="tag">Flutter / Dart</span><span class="tag">Kotlin</span><span class="tag">Android SDK</span>
+        <span class="tag">Google Play Console</span></div></div>
+      <div class="sk"><h3>Architecture</h3><div class="tags">
+        <span class="tag">Clean Architecture</span><span class="tag">MVVM</span><span class="tag">SOLID</span>
+        <span class="tag">Modular Design</span></div></div>
+      <div class="sk"><h3>Quality &amp; Security</h3><div class="tags">
+        <span class="tag">Unit / UI / Integration</span><span class="tag">Crashlytics</span><span class="tag">Secure Storage</span>
+        <span class="tag">Biometrics</span><span class="tag">CI/CD</span></div></div>
+      <div class="sk"><h3>Integration &amp; Tools</h3><div class="tags">
+        <span class="tag">REST</span><span class="tag">Firebase</span><span class="tag">Third-Party SDKs</span>
+        <span class="tag">Figma</span><span class="tag">Claude Code / Cursor</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Selected Projects</h2>
+    <div class="skills">
+      <div class="sk"><h3>Kaso — B2B Procurement (YC W22)</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Lead mobile delivery for iOS + Flutter apps used daily by thousands of merchants across the GCC. Led the iOS → Flutter migration. 99.5% crash-free.</p>
+        <div class="tags"><span class="tag">Swift</span><span class="tag">Flutter</span><span class="tag">Lead</span></div></div>
+      <div class="sk"><h3>Fintech &amp; e-commerce (KAIZEN)</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Led a 5+ engineer team building finance apps for 50,000+ users — payments, KYC, biometric auth. CI/CD cut deploys ~40% and bugs ~70%.</p>
+        <div class="tags"><span class="tag">iOS</span><span class="tag">Flutter</span><span class="tag">Payments / KYC</span></div></div>
+      <div class="sk"><h3>15+ shipped apps</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">iOS &amp; Android across e-commerce, delivery, real estate, news (with video), and services — 100K+ combined downloads.</p>
+        <div class="tags"><span class="tag">iOS</span><span class="tag">Android</span><span class="tag">App Store / Play</span></div></div>
+      <div class="sk"><h3>Music Network One — iOS &amp; Apple Watch</h3>
+        <p style="font-size:13.5px;color:#3A4452;margin-bottom:8px">Native iOS plus a companion watchOS app for music-industry members to log and track activity.</p>
+        <div class="tags"><span class="tag">Swift</span><span class="tag">watchOS</span><span class="tag">UIKit</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Senior Mobile Engineer (Lead) · <span class="job-c">Kaso (YC W22)</span></div>
+        <div class="job-m">Sep 2022 – Present · Dubai</div>
+      </div>
+      <ul>
+        <li>Lead mobile delivery across iOS &amp; Flutter; led the full iOS → Flutter migration and own the broader mobile codebase.</li>
+        <li>Drive sprint planning, code reviews, and App Store / Play Store releases; sustain 99.5% crash-free sessions.</li>
+        <li>Drive adoption of AI dev tools (Claude Code, Cursor) to lift team speed and quality.</li>
+      </ul>
+      <div class="stk">Swift · Flutter · MVVM / Clean Architecture · App Store / Play Store · CI/CD</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">iOS / Mobile Team Lead · <span class="job-c">KAIZEN</span></div>
+        <div class="job-m">Jul 2020 – Aug 2022</div>
+      </div>
+      <ul>
+        <li>Led and mentored a 5+ engineer team; owned delivery timelines, priorities, and escalations.</li>
+        <li>Architected fintech apps (Swift, Flutter) with payments, KYC, and biometric auth; established CI/CD.</li>
+      </ul>
+      <div class="stk">iOS (Swift) · Flutter · MVVM · Keychain / Biometrics · CI/CD</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Senior Mobile Engineer (Contract, Remote) · <span class="job-c">IXCoders</span></div>
+        <div class="job-m">Jan 2021 – Jun 2022</div>
+      </div>
+      <ul>
+        <li>Shipped 10+ production apps (iOS &amp; Android, 100,000+ downloads); owned daily store releases.</li>
+      </ul>
+      <div class="stk">iOS (Swift) · Flutter · REST · Fastlane</div>
+    </div>
+
+    <div class="job">
+      <div class="job-h">
+        <div class="job-r">Mobile Application Developer (iOS · Android) · <span class="job-c">AutoTech Co</span></div>
+        <div class="job-m">Feb 2018 – Jun 2020</div>
+      </div>
+      <ul>
+        <li>Built native and cross-platform apps serving 20,000+ users; 4 apps at 4.5★+; pioneered Flutter adoption.</li>
+      </ul>
+      <div class="stk">iOS (Swift) · Android (Kotlin) · Flutter</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Competitive Programming</h2>
+    <p class="body"><b>ICPC / ACPC Finalist</b> — 4000+ problems solved across Codeforces, HackerRank, AtCoder,
+      and LeetCode. <b>2nd Place</b> ICPC Syrian Championship (2024) · <b>5th Place</b> ICPC Damascus (2023).
+      Deep algorithms and optimization behind performant mobile engineering and sound technical leadership.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <div class="links">
+      <a href="mailto:issamotoz@gmail.com">issamotoz@gmail.com</a>
+      <a href="https://www.linkedin.com/in/issam-otoz-38876a193">LinkedIn</a>
+      <a href="https://github.com/issamotoz">GitHub</a>
+      <a href="https://issamotoz.github.io">iOS Portfolio</a>
+      <a href="https://issamotoz.github.io/flutter">Flutter Portfolio</a>
+    </div>
+    <div class="copy">© 2026 Issam Otoz · Senior Mobile Engineer &amp; Team Lead · Remote · Dubai, UAE</div>
+  </div>
+</footer>
+
+</body>
+</html>
